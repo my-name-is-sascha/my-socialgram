@@ -1,0 +1,9 @@
+###> general git ignore ###
+node_modules
+tmp
+.bash*
+.env*
+.DS_Store
+.idea
+.vscode
+*.log
