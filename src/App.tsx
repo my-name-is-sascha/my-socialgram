@@ -1,12 +1,10 @@
+import './globals.css'
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <div>
-        foo
-      </div>
-    </>
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
   )
 }
 
