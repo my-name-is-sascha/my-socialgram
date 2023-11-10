@@ -23,12 +23,15 @@ const LeftSidebar = () => {
                 to='/' 
                 className="flex gap-3 items-center"
             >
-                    <img 
-                        src="/assets/images/logo.svg"
-                        alt="logo"
-                        width={170}
-                        height={36}
-                    />
+                {/* TODO: change logo */}
+                {/* <img 
+                    src="/assets/images/logo.svg"
+                    alt="logo"
+                    width={170}
+                    height={36}
+                /> */}
+                
+                <h1 className="h3-bold">SOCIALGRAM BITCH</h1>
             </Link>
 
             <Link 
