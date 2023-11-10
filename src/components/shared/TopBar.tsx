@@ -20,12 +20,14 @@ const TopBar = () => {
                 to='/' 
                 className="flex gap-3 items-center"
             >
-                <img 
+                {/* TODO: change logo */}
+                {/* <img 
                     src="/assets/images/logo.svg"
                     alt="logo"
                     width={130}
                     height={325}
-                />
+                /> */}
+                <h1 className="h3-bold">SOCIALGRAM BITCH</h1>
             </Link>
 
             <div className="flex gab-4">
