@@ -7,7 +7,7 @@ import { useUserContext } from "@/context/AuthContext";
 const TopBar = () => {
     const { mutate: signOut, isSuccess } = useSignOutAccount();
     const navigate = useNavigate();
-    const user = useUserContext();
+    const { user } = useUserContext();
 
     useEffect(() => {
         if(isSuccess) navigate(0);
@@ -16,7 +16,10 @@ const TopBar = () => {
   return (
     <section className="topbar">
         <div className="flex-between py-4 px-5">
-            <Link to='/' className="flex gap-3 items-center">
+            <Link 
+                to='/' 
+                className="flex gap-3 items-center"
+            >
                 <img 
                     src="/assets/images/logo.svg"
                     alt="logo"
@@ -37,7 +40,10 @@ const TopBar = () => {
                     />
                 </Button>
 
-                <Link to={`/profile/${user.id}`} className="flex-ceter gap-3">
+                <Link 
+                    to={`/profile/${user.id}`} 
+                    className="flex-ceter gap-3"
+                >
                     <img 
                         src={user.imageUrl || '/assets/icons/profile-placeholder.svg'}
                         className="h-8 w-8 rounded-full"
