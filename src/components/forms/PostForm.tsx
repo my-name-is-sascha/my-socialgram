@@ -64,7 +64,7 @@ const PostForm = ({ post }: PostFormProps) => {
               <FormControl>
                 <Textarea 
                     className="shad-textarea custom-scrollbar"
-                    placeholder="shadcn" {...field} 
+                    {...field} 
                 />
               </FormControl>
               <FormMessage className="shad-form_message" />
@@ -96,6 +96,7 @@ const PostForm = ({ post }: PostFormProps) => {
                 <Input 
                     type="text" 
                     className="shad-input" 
+                    placeholder="add a location ..." 
                     {...field}
                 />
               </FormControl>
